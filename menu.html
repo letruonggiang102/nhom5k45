@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <title>Menu</title>
+    <meta charset="utf-8">
+<!-- Refresh trang -->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BÁN THỨC ĂN</title>
+	<link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/menu.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo-team">
+                <a href="index.html"><i class="fa fa-code"></i></a>
+                <span> Đồ án công nghệ IoT và ứng dụng </span>
+            </div>	
+
+            <ul class="menu">
+                <li class="menu-link">
+					<a href="index.html" id="home-item"><i class="fa fa-house"></i> Trang chủ </a>
+				</li>
+
+                <li class="menu-link">
+					<a href="temp.html" id="temp-item"><i class="fa-solid fa-temperature-half"></i> Nhiệt độ </a>
+				</li>
+
+                <li class="menu-link">
+					<a href="member.html" id="member-item"><i class="fa fa-people-group"></i> Thành viên </a>
+				</li>
+
+                <li class="menu-link">
+					<a href="data.html" id="data-item"><i class="fa fa-chart-simple"></i> Dữ liệu </a>
+				</li>
+
+                <li class="menu-link">
+					<a href="contacts.html" id="contacts-item"><i class="fa fa-circle-info"></i> Liên hệ </a>
+				</li>
+            </ul>
+        </div>
+    </div>
+
+	<!-- <script src="./js/menu.js"></script> -->
+
+    <script>
+		var url = window.location.href
+		if(url.includes("index")) {
+			$("#home-item").addClass("activate-item")
+		}
+
+		else if(url.includes("temp")) {
+			$("#temp-item").addClass("activate-item")
+		}
+
+		else if(url.includes("member")) {
+			$("#member-item").addClass("activate-item")
+		}
+
+		else if(url.includes("data")) {
+			$("#data-item").addClass("activate-item")
+		}
+
+		else if(url.includes("contacts")) {
+			$("#contacts-item").addClass("activate-item")
+		}
+	</script>
+    
+</body>
+</html>
